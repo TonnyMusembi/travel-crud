@@ -10,11 +10,10 @@ class GameController extends Controller
     //
     public function index()
     {
-        //
-        //return Game::all();
+
         $games = Game::all();
 
-        return view('index',compact('games'));
+        return view('index', compact('games'));
     }
 
     /**
@@ -26,7 +25,6 @@ class GameController extends Controller
     {
         //
         return view('create');
-
     }
 
     /**
