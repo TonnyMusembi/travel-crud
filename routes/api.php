@@ -5,6 +5,7 @@ use App\Http\Controllers\GameController;
 use App\Http\Controllers\LeagueController;
 use App\Http\Controllers\NationController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\PurchaseController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -28,3 +29,4 @@ Route::resource('leagues',LeagueController::class);
 Route::resource('nations',NationController::class);
 Route::resource('products',ProductController::class);
 Route::resource('cart',CartController::class);
+Route::resource('purchase', PurchaseController::class);
