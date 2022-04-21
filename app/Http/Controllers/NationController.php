@@ -32,8 +32,9 @@ class NationController extends Controller
         }
         return response()->json(['req' => $request]);
     }
-    public function destroy($id){
-
-        return response()->json();
+    public function create(Request $request){
+        //return response()->json();
+        return view('create');
     }
+
 }

@@ -20,7 +20,7 @@ class CreatePurchasesTable extends Migration
             $table->timestamps();
         });
     }
-
+    
     /**
      * Reverse the migrations.
      *

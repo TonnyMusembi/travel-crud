@@ -31,4 +31,10 @@ class PurchaseController extends Controller
     public function create($id){
    return view ('create');
     }
+    public function update($id){
+
+    }
+    public function destroy(Request $request){
+        return response()->json();
+    }
 }
