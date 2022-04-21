@@ -34,4 +34,7 @@ class ProductController extends Controller
     public function create(){
     return view('create');
     }
+    public function update(Request $request){
+        return response()->json(['req'=>$request]);
+    }
 }
