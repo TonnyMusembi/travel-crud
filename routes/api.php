@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BetController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\GameController;
 use App\Http\Controllers\LeagueController;
@@ -30,3 +31,4 @@ Route::resource('nations',NationController::class);
 Route::resource('products',ProductController::class);
 Route::resource('cart',CartController::class);
 Route::resource('purchase', PurchaseController::class);
+Route::resource('bets',BetController::class);

@@ -36,5 +36,6 @@ class PurchaseController extends Controller
     }
     public function destroy(Request $request){
         return response()->json();
+
     }
 }
