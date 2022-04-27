@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    //
-
     public function index(){
         return Product::all();
 
@@ -31,7 +29,7 @@ class ProductController extends Controller
         return response()->json(['req' => $request]);
 
     }
-    public function create(){
+    public function create($id){
     return view('create');
     }
     public function update(Request $request){
