@@ -31,4 +31,7 @@ class CartController extends Controller
         return response()->json(['req' => $request]);
 
     }
+    public function destroy(){
+        
+    }
 }
