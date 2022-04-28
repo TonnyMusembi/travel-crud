@@ -35,4 +35,8 @@ class ProductController extends Controller
     public function update(Request $request){
         return response()->json(['req'=>$request]);
     }
+    public  function destroy($id){
+
+    }
 }
+
