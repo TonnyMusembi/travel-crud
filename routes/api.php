@@ -12,8 +12,11 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PhoneController;
 use App\Http\Controllers\TodoController;
+use App\Http\Controllers\VehicleController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -38,3 +41,5 @@ Route::resource('purchase', PurchaseController::class);
 Route::resource('bets',BetController::class);
 Route::resource('ussd', UssdController::class);
 Route::resource('phones',PhoneController::class);
+Route::resource('orders', OrderController::class);
+Route::resource('vehicles', VehicleController::class);
