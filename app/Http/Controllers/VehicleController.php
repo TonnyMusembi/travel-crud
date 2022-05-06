@@ -32,4 +32,5 @@ class VehicleController extends Controller
         return response()->json(['req' => $request]);
 
     }
+   
 }

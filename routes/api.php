@@ -31,7 +31,7 @@ use App\Http\Controllers\VehicleController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-//Route::resource('api/games',GameController::class);
+Route::resource('api/games',GameController::class);
 
 Route::resource('leagues',LeagueController::class);
 Route::resource('nations',NationController::class);
